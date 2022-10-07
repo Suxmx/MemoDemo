@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenScale.cs" />
+    <Compile Include="Assets\PlaneTrigger.cs" />
     <Compile Include="Assets\Scripts\Jewel.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIAnchor.cs" />
     <Compile Include="Assets\NGUI\Scripts\Interaction\UIScrollView.cs" />
@@ -89,9 +90,11 @@
     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenFill.cs" />
     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenPosition.cs" />
     <Compile Include="Assets\NGUI\Scripts\Interaction\LanguageSelection.cs" />
+    <Compile Include="Assets\PlaneBatteryCtrl.cs" />
     <Compile Include="Assets\NGUI\Scripts\Interaction\UITable.cs" />
     <Compile Include="Assets\Scripts\Exit.cs" />
     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenWidth.cs" />
+    <Compile Include="Assets\Victory.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIPanel.cs" />
     <Compile Include="Assets\NGUI\Scripts\Interaction\UIImageButton.cs" />
     <Compile Include="Assets\Scripts\BatteryMove.cs" />
@@ -101,6 +104,7 @@
     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenOrthoSize.cs" />
     <Compile Include="Assets\EnemyPaoCtrl.cs" />
     <Compile Include="Assets\NGUI\Scripts\Internal\ActiveAnimation.cs" />
+    <Compile Include="Assets\PlaneCtrl.cs" />
     <Compile Include="Assets\Scripts\BatteryHurt.cs" />
     <Compile Include="Assets\NGUI\Scripts\Internal\UIRect.cs" />
     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenAlpha.cs" />

@@ -9,7 +9,7 @@ public class RandomBulletManager : MonoBehaviour
     public float PerFire = 0.05f;
     public GameObject Bullet;
     bool Wait = false;
-    int Rand,NowCount=-1;
+    int Rand,NowCount=0;
     
     float NowTime = 0;
     void Start()
@@ -28,7 +28,7 @@ public class RandomBulletManager : MonoBehaviour
             NowTime += Time.deltaTime;
             if (NowCount < Rand)
             {
-
+                
                 //Debug.Log(NowCount);
                 //Debug.Log("NowTime=" + NowTime);
                 if (NowTime >= PerFire)
@@ -37,6 +37,8 @@ public class RandomBulletManager : MonoBehaviour
                     NowTime = 0;
                     Debug.Log("Fire");
                     GameObject BulletChild = Instantiate(Bullet, transform.position, transform.rotation);
+                    
+                   
                     BulletChild.GetComponent<Animator>().SetFloat("Rand", (float)Rand);
                     Bullet.GetComponent<PlayerBulletCtrl>().Face = Face;
                     Debug.Log(Face);
