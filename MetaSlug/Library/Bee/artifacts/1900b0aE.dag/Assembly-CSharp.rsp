@@ -488,6 +488,9 @@
 "Assets/NGUI/Scripts/UI/UITexture.cs"
 "Assets/NGUI/Scripts/UI/UITooltip.cs"
 "Assets/NGUI/Scripts/UI/UIViewport.cs"
+"Assets/PlaneBatteryCtrl.cs"
+"Assets/PlaneCtrl.cs"
+"Assets/PlaneTrigger.cs"
 "Assets/RandomBulletManager.cs"
 "Assets/Scripts/BatteryBulletCtrol.cs"
 "Assets/Scripts/BatteryHurt.cs"
@@ -530,6 +533,7 @@
 "Assets/TankBulletCtrl.cs"
 "Assets/TankCtrl.cs"
 "Assets/TargetedBullet.cs"
+"Assets/Victory.cs"
 -langversion:9.0
 
 /deterministic
