@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
 //using UnityEditor.SearchService;
@@ -20,6 +21,7 @@ public class PlayerMove : MonoBehaviour
     public GameObject Health;//生命系统
     public GameObject FITHFirePoint,FITH;//手雷
     public GameObject NearAttack;
+    public GameObject ShootModeText;
     public bool IfNearAttack = false;
 
     bool IsGround;//是否在地面
@@ -277,6 +279,10 @@ public class PlayerMove : MonoBehaviour
         {
             FireMode++;
             if (FireMode == 4) FireMode = 1;
+
+            if (FireMode == 1) ShootModeText.GetComponent<TextMeshProUGUI>().text = "当前武器：" + "默认子弹";
+            else if (FireMode == 2) ShootModeText.GetComponent<TextMeshProUGUI>().text = "当前武器：" + "直来直去永不回头的制导导弹";
+            else if (FireMode == 3) ShootModeText.GetComponent<TextMeshProUGUI>().text = "当前武器：" + "随机子弹";
         }
     }
     void StopNearAttack()//备用
